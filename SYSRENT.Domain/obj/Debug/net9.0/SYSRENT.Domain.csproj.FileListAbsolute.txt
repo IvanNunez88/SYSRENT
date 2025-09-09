@@ -1,0 +1,12 @@
+/Users/ivannunezfrayre/Desktop/MAC/FACPYA/GPO73/SISTEMA RENTA/BACK/SYSRENT/SYSRENT.Domain/bin/Debug/net9.0/SYSRENT.Domain.deps.json
+/Users/ivannunezfrayre/Desktop/MAC/FACPYA/GPO73/SISTEMA RENTA/BACK/SYSRENT/SYSRENT.Domain/bin/Debug/net9.0/SYSRENT.Domain.dll
+/Users/ivannunezfrayre/Desktop/MAC/FACPYA/GPO73/SISTEMA RENTA/BACK/SYSRENT/SYSRENT.Domain/bin/Debug/net9.0/SYSRENT.Domain.pdb
+/Users/ivannunezfrayre/Desktop/MAC/FACPYA/GPO73/SISTEMA RENTA/BACK/SYSRENT/SYSRENT.Domain/obj/Debug/net9.0/SYSRENT.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ivannunezfrayre/Desktop/MAC/FACPYA/GPO73/SISTEMA RENTA/BACK/SYSRENT/SYSRENT.Domain/obj/Debug/net9.0/SYSRENT.Domain.AssemblyInfoInputs.cache
+/Users/ivannunezfrayre/Desktop/MAC/FACPYA/GPO73/SISTEMA RENTA/BACK/SYSRENT/SYSRENT.Domain/obj/Debug/net9.0/SYSRENT.Domain.AssemblyInfo.cs
+/Users/ivannunezfrayre/Desktop/MAC/FACPYA/GPO73/SISTEMA RENTA/BACK/SYSRENT/SYSRENT.Domain/obj/Debug/net9.0/SYSRENT.Domain.csproj.CoreCompileInputs.cache
+/Users/ivannunezfrayre/Desktop/MAC/FACPYA/GPO73/SISTEMA RENTA/BACK/SYSRENT/SYSRENT.Domain/obj/Debug/net9.0/SYSRENT.Domain.sourcelink.json
+/Users/ivannunezfrayre/Desktop/MAC/FACPYA/GPO73/SISTEMA RENTA/BACK/SYSRENT/SYSRENT.Domain/obj/Debug/net9.0/SYSRENT.Domain.dll
+/Users/ivannunezfrayre/Desktop/MAC/FACPYA/GPO73/SISTEMA RENTA/BACK/SYSRENT/SYSRENT.Domain/obj/Debug/net9.0/refint/SYSRENT.Domain.dll
+/Users/ivannunezfrayre/Desktop/MAC/FACPYA/GPO73/SISTEMA RENTA/BACK/SYSRENT/SYSRENT.Domain/obj/Debug/net9.0/SYSRENT.Domain.pdb
+/Users/ivannunezfrayre/Desktop/MAC/FACPYA/GPO73/SISTEMA RENTA/BACK/SYSRENT/SYSRENT.Domain/obj/Debug/net9.0/ref/SYSRENT.Domain.dll

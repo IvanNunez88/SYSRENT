@@ -12,9 +12,9 @@ public static class InfrastrcutureServicesRegistration
 
     public static IServiceCollection AddServicesInfrastructure(this IServiceCollection services, IConfiguration configuration)
     {
-
         services.AddScoped<ISqlDbConnection, SqlDapperConnection>();
         services.AddScoped<IHorarioRepository, HorarioRepository>();
+        services.AddScoped<IUnitOfWork, UnitOfWork>();
 
         return services;
     }
