@@ -14,6 +14,7 @@ public static class InfrastrcutureServicesRegistration
     {
         services.AddScoped<ISqlDbConnection, SqlDapperConnection>();
         services.AddScoped<IHorarioRepository, HorarioRepository>();
+        services.AddScoped<ITamanoRepository, TamanoRepository>();
         services.AddScoped<IUnitOfWork, UnitOfWork>();
 
         return services;
