@@ -8,4 +8,7 @@ public interface IHorarioRepository
     public Task<bool> Agregar(HORARIO Horario);
     public Task<IEnumerable<DtoConsulCatHorario>> ConsultaCatHorario();
 
+
+
+
 }

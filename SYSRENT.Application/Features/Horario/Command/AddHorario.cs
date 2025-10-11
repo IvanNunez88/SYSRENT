@@ -33,7 +33,6 @@ public class AddHorarioCommandHandler(IUnitOfWork _unitOfWork) : IRequestHandler
             {
                 rsp.Status = false;
             }
-
         }
         else
         {

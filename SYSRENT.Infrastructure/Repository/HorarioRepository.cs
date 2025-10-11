@@ -11,6 +11,7 @@ public class HorarioRepository(ISqlDbConnection sqlDbConnection) : IHorarioRepos
 {
     private static readonly string DefaultCatalog = "[SELECCIONAR]";
 
+
     public async Task<bool> Agregar(HORARIO Horario)
     {
         bool Result = true;
@@ -57,4 +58,6 @@ public class HorarioRepository(ISqlDbConnection sqlDbConnection) : IHorarioRepos
 
         return lstDatos;
     }
+
+
 }
