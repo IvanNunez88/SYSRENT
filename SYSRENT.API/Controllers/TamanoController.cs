@@ -1,6 +1,5 @@
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using SYSRENT.Application.Features.Horario.Query;
 using SYSRENT.Application.Features.Tamano.Query;
 
 namespace SYSRENT.API.Controllers;

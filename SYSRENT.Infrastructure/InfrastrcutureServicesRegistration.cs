@@ -1,3 +1,4 @@
+using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using SYSRENT.Application.Contract.Persistences;
@@ -15,6 +16,7 @@ public static class InfrastrcutureServicesRegistration
         services.AddScoped<ISqlDbConnection, SqlDapperConnection>();
         services.AddScoped<IHorarioRepository, HorarioRepository>();
         services.AddScoped<ITamanoRepository, TamanoRepository>();
+        services.AddScoped<IVehiculoRepository, VehiculoRepository>();
         services.AddScoped<IUnitOfWork, UnitOfWork>();
 
         return services;

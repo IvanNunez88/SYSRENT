@@ -4,5 +4,6 @@ public interface IUnitOfWork
 {
     IHorarioRepository HorarioRepository { get; }
     ITamanoRepository TamanoRepository { get; }
+    IVehiculoRepository VehiculoRepository { get; }
 
 }
