@@ -11,13 +11,10 @@ public class VehiculoValidator : AbstractValidator<VEHICULO>
     {
         _unitOfWork = unitOfWork;
 
-        RuleFor(x => x.Descrip).Cascade(CascadeMode.Stop).MinimumLength(2).WithMessage("Debe escribir una descripción del vehículo.");
+        RuleFor(x => x.Descrip).Cascade(CascadeMode.Stop).MinimumLength(4).WithMessage("Debe escribir una descripción del vehículo.");
         RuleFor(x => x.IdTamaño).Cascade(CascadeMode.Stop).GreaterThan(0).WithMessage("Debe seleccionar un tamaño");
+        RuleFor(x => x.Capacidad).Cascade(CascadeMode.Stop).GreaterThan(0).WithMessage("Debe la capacidad no debe ser menor a 0");
+        RuleFor(x => x.PRenta).Cascade(CascadeMode.Stop).GreaterThan(0).WithMessage("El precio de renta no puede ser menora 0");
 
-        // RuleFor(x => x.Anio)
-        //     .InclusiveBetween(1886, DateTime.Now.Year).WithMessage("El año debe estar entre 1886 y el año actual.");
-
-        // RuleFor(x => x.Precio)
-        //     .GreaterThan(0).WithMessage("El precio debe ser mayor que cero.");
     }
 }
