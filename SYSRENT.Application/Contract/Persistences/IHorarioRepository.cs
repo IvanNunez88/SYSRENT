@@ -9,6 +9,4 @@ public interface IHorarioRepository
     public Task<IEnumerable<DtoConsulCatHorario>> ConsultaCatHorario();
 
 
-
-
 }
