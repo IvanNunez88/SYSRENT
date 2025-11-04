@@ -1,5 +1,6 @@
 using System.Data;
 using Dapper;
+using Microsoft.Data.SqlClient;
 using SYSRENT.Application.Contract.Persistences;
 using SYSRENT.Application.Data;
 using SYSRENT.Domain.Vehiculo.DTO;
@@ -16,8 +17,7 @@ public class VehiculoRepository(ISqlDbConnection sqlDbConnection) : IVehiculoRep
         try
         {
             const string SQLScript = @"INSERT INTO VEHICULO(Descrip, IdTamaño,Capacidad, PRenta)
-                                                      VALUE(@P_Descrip, @P_IdTamaño, @P_Capacidad, @P_PRenta)";
-
+                                                      VALUES (@P_Descrip, @P_IdTamaño, @P_Capacidad, @P_PRenta)";
             var dpParametros = new
             {
                 P_Descrip = Vehiculo.Descrip,
@@ -31,9 +31,8 @@ public class VehiculoRepository(ISqlDbConnection sqlDbConnection) : IVehiculoRep
             var rows = await Conn.ExecuteAsync(SQLScript, dpParametros, commandType: CommandType.Text);
 
             if (rows <= 0) Result = false;
-
         }
-        catch
+        catch(SqlException e)
         {
             Result = false;
         }
@@ -62,4 +61,5 @@ public class VehiculoRepository(ISqlDbConnection sqlDbConnection) : IVehiculoRep
 
         return enuDatos;
     }
+
 }

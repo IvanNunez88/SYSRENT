@@ -11,7 +11,6 @@ public record GetAllVehiculosQuery() : IRequest<DtoResponse<IEnumerable<DtoConsu
 #endregion
 
 #region Handler
-
 public class GetAllVehiculosQueryHandler(IUnitOfWork _unitOfWork) : IRequestHandler<GetAllVehiculosQuery, DtoResponse<IEnumerable<DtoConsultaVehiculo>>>
 {
     public async Task<DtoResponse<IEnumerable<DtoConsultaVehiculo>>> Handle(GetAllVehiculosQuery request, CancellationToken cancellationToken)
@@ -33,5 +32,4 @@ public class GetAllVehiculosQueryHandler(IUnitOfWork _unitOfWork) : IRequestHand
         return rsp;
     }
 }
-
 #endregion
