@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SYSRENT.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0af027c857f919c3b2b8b0ba4396c3b3498de504")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2af02edd24f055296321f078ee4cd5bc9698ed49")]
 [assembly: System.Reflection.AssemblyProductAttribute("SYSRENT.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SYSRENT.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

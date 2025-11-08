@@ -10,6 +10,42 @@ namespace SYSRENT.Infrastructure.Repository;
 
 public class VehiculoRepository(ISqlDbConnection sqlDbConnection) : IVehiculoRepository
 {
+    public async Task<bool> ActualizarVehiculo(UPDVEHICULO Vehiculo)
+    {
+        bool Result = true;
+
+        try
+        {
+            const string SQLScript = @"UPDATE VEHICULO SET Descrip = @P_Descrip,
+                                                            IdTamaño = @P_IdTamano,
+                                                            Capacidad = @P_Capacidad,
+                                                            PRenta = @P_PRenta,
+                                                            IsActivo = @P_IsActivo
+                                        WHERE IdVehiculo = @P_IdVehiculo";
+            var dpParametros = new
+            {
+                P_IdVehiculo = Vehiculo.IdVehiculo,
+                P_Descrip = Vehiculo.Descrip,
+                P_IdTamano = Vehiculo.IdTamaño,
+                P_Capacidad = Vehiculo.Capacidad,
+                P_PRenta = Vehiculo.PRenta,
+                P_IsActivo = Vehiculo.IsEstado
+            };
+
+            using var Conn = sqlDbConnection.GetConnection();
+
+            var rows = await Conn.ExecuteAsync(SQLScript, dpParametros, commandType: CommandType.Text);
+
+            if (rows <= 0) Result = false;
+        }
+        catch (SqlException ex)
+        {
+            Result = false;
+        }
+
+        return Result;
+    }
+
     public async Task<bool> AgregarVehiculo(VEHICULO Vehiculo)
     {
         bool Result = true;
@@ -32,7 +68,7 @@ public class VehiculoRepository(ISqlDbConnection sqlDbConnection) : IVehiculoRep
 
             if (rows <= 0) Result = false;
         }
-        catch(SqlException e)
+        catch
         {
             Result = false;
         }

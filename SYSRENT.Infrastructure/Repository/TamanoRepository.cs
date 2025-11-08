@@ -15,7 +15,7 @@ public class TamanoRepository(ISqlDbConnection sqlDbConnection) : ITamanoReposit
         List<DtoCatTamano> lstDatos = [new DtoCatTamano(IdTamaño: 0, Descrip: DefaultCatalog)];
 
         const string SQLScript = @"SELECT IdTamaño,
-                                          Descrip
+                                          UPPER(Descrip) AS Descrip
                                    FROM TAMAÑO";
 
         using var Conn = sqlDbConnection.GetConnection();

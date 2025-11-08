@@ -17,6 +17,12 @@ public class VehiculoController(IMediator _mediator) : ControllerBase
         return Ok(await _mediator.Send(new AddVehiculoCommand(Vehiculo)));
     }
 
+    [HttpPut("ActualizarVehiculo")]
+    public async Task<IActionResult> ActualizarVehiculo([FromBody] UPDVEHICULO Vehiculo)
+    {
+        return Ok(await _mediator.Send(new UpdateVehiculoCommand(Vehiculo)));
+    }
+
     [HttpGet("ListaVehiculos")]
     public async Task<IActionResult> ListaVehiculos()
     {
